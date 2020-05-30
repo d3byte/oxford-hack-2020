@@ -1,5 +1,12 @@
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+import { TopicsComponent } from './topics.component';
 
-export const RoutingModule = RouterModule.forRoot(routes);
+const routes: Routes = [
+  {
+    path: '',
+    component: TopicsComponent,
+  },
+];
+
+export const RoutingModule = RouterModule.forChild(routes);
