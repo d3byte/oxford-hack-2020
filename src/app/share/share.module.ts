@@ -6,9 +6,11 @@ import { CoreModule } from '@core/core.module';
 
 import { ComponentsModule } from '@share/components/components.module';
 
+import { AngularSvgIconModule } from 'angular-svg-icon';
+
 @NgModule({
   declarations: [],
   imports: [],
-  exports: [CommonModule, CoreModule, ReactiveFormsModule, ComponentsModule],
+  exports: [CommonModule, CoreModule, ReactiveFormsModule, ComponentsModule, AngularSvgIconModule],
 })
 export class ShareModule {}
