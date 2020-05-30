@@ -7,37 +7,6 @@
   padding: 40px 80px;
 }
 
-.home__promo {
-  justify-self: flex-start;
-  .home__promo--heading {
-    font-size: 48px;
-  }
-
-  .home__promo--subheding {
-    color: rgba(255, 255, 255, 0.6);
-  }
-}
-
-.home__topic {
-  .home__topic--subheding {
-    color: rgba(255, 255, 255, 0.6);
-  }
-}
-
-.button {
-  &.button--primary {
-    background-color: white;
-    border: 1px solid white;
-    border-radius: 25px;
-    color: black;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 17px;
-    padding: 16px 31px;
-    text-decoration: none;
-  }
-}
-
 footer {
   background-color: black;
   box-sizing: border-box;
@@ -50,4 +19,8 @@ footer {
   .home__footer {
     background-color: black;
   }
+}
+
+.home__subtitle {
+  color: rgba(255, 255, 255, 0.6);
 }
