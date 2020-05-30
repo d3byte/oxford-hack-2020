@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 
-import { TopicCardColors } from '@share/components/topic-card/topic-card-colors.type';
+import { topicCardColors } from '@share/components/topic-card/topic-card-colors.const';
+import { TopicCardColor } from '@share/components/topic-card/topic-card-colors.type';
 import { TopicInterface } from '@share/interfaces/topic.interface';
 
 @Component({
@@ -10,7 +11,7 @@ import { TopicInterface } from '@share/interfaces/topic.interface';
 })
 export class TopicCardComponent implements OnInit {
   @Input() public topic: TopicInterface;
-  @Input() public backgroundColor?: TopicCardColors;
+  @Input() public backgroundColor?: TopicCardColor;
 
   ngOnInit() {
     this.setDefaultBackgroundColor();
@@ -18,7 +19,12 @@ export class TopicCardComponent implements OnInit {
 
   private setDefaultBackgroundColor(): void {
     if (!this.backgroundColor && !this.topic.previewImg) {
-      this.backgroundColor = '#1287A8';
+      this.backgroundColor = this.getRandomColor();
     }
+  }
+
+  private getRandomColor(): TopicCardColor {
+    const cardIndex: number = Math.floor(Math.random() * 6);
+    return topicCardColors[cardIndex];
   }
 }
