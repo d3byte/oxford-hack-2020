@@ -39,9 +39,17 @@ footer {
   .scroll {
     overflow-x: scroll;
     overflow-y: hidden;
-    // background-color: red;
     scrollbar-color: #f46286 #222;
     scrollbar-width: thin;
+
+    &::-webkit-scrollbar {
+      background: #222;
+      height: 6px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #f46286 !important;
+      border-radius: 8px;
+    }
 
     > * {
       &:first-child {
