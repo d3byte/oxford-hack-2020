@@ -1,61 +1,103 @@
 /* You can add global styles to this file, and also import other style files */
 @font-face {
-    font-family:'HelveticaNeueCyr';
-    src: url('./assets/fonts/HelveticaNeueCyr-Bold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-    font-stretch: normal;
-    unicode-range: U+0020-00F7;
+  font-family: 'HelveticaNeueCyr';
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 700;
+  src: url('./assets/fonts/HelveticaNeueCyr-Bold.ttf') format('truetype');
+  unicode-range: U+0020-00F7;
 }
 
 @font-face {
-    font-family:'HelveticaNeueCyr';
-    src: url('./assets/fonts/HelveticaNeueCyr-Heavy.ttf') format('truetype');
-    font-weight: 900;
-    font-style: normal;
-    font-stretch: normal;
-    unicode-range: U+0020-00F7;
+  font-family: 'HelveticaNeueCyr';
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 900;
+  src: url('./assets/fonts/HelveticaNeueCyr-Heavy.ttf') format('truetype');
+  unicode-range: U+0020-00F7;
 }
 
 @font-face {
-    font-family:'HelveticaNeueCyr';
-    src: url('./assets/fonts/HelveticaNeueCyr-Light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-    font-stretch: normal;
-    unicode-range: U+0020-00F7;
+  font-family: 'HelveticaNeueCyr';
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 300;
+  src: url('./assets/fonts/HelveticaNeueCyr-Light.ttf') format('truetype');
+  unicode-range: U+0020-00F7;
 }
 
 @font-face {
-    font-family:'HelveticaNeueCyr';
-    src: url('./assets/fonts/HelveticaNeueCyr-Medium.ttf') format('truetype');
-    font-weight: 550;
-    font-style: normal;
-    font-stretch: normal;
-    unicode-range: U+0020-00F7;
+  font-family: 'HelveticaNeueCyr';
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 500;
+  src: url('./assets/fonts/HelveticaNeueCyr-Medium.ttf') format('truetype');
+  unicode-range: U+0020-00F7;
 }
 
 @font-face {
-    font-family:'HelveticaNeueCyr';
-    src: url('./assets/fonts/HelveticaNeueCyr-Thin.ttf') format('truetype');
-    font-weight: 100;
-    font-style: normal;
-    font-stretch: normal;
-    unicode-range: U+0020-00F7;
+  font-family: 'HelveticaNeueCyr';
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 100;
+  src: url('./assets/fonts/HelveticaNeueCyr-Thin.ttf') format('truetype');
+  unicode-range: U+0020-00F7;
 }
 
 @font-face {
-    font-family:'HelveticaNeueCyr';
-    src: url('./assets/fonts/HelveticaNeueCyr-UltraLight.ttf') format('truetype');
-    font-weight: 200;
-    font-style: normal;
-    font-stretch: normal;
-    unicode-range: U+0020-00F7;
+  font-family: 'HelveticaNeueCyr';
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 200;
+  src: url('./assets/fonts/HelveticaNeueCyr-UltraLight.ttf') format('truetype');
+  unicode-range: U+0020-00F7;
 }
 
 * {
-    font-family: 'HelveticaNeueCyr';
-    background-color: #222222;
-    color: #fff;
-    font-weight: 550;
+  background-color: #222;
+  color: white;
+  font-family: 'HelveticaNeueCyr', Roboto, sans-serif;
+  font-weight: 500;
+}
+
+.headline1 {
+  font-size: 64px;
+  font-weight: bold;
+  line-height: 64px;
+}
+
+.headline2 {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.subtitle {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 24px;
+}
+
+.body1 {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 18px;
+}
+
+.body2 {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 16px;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.align-right {
+  margin-left: auto;
+}
+
+.align-left {
+  margin-right: auto;
 }
