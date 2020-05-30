@@ -1,0 +1,26 @@
+plugins:
+  - stylelint-scss
+  - stylelint-prettier
+extends:
+  - stylelint-config-standard
+  - stylelint-config-sass-guidelines
+  - stylelint-prettier/recommended
+rules:
+  prettier/prettier: true
+  no-empty-source: null
+  selector-type-no-unknown:
+    - true
+    - ignore:
+      - custom-elements
+  selector-pseudo-element-no-unknown:
+    - true
+    - ignorePseudoElements:
+      - ng-deep
+  at-rule-no-unknown: null
+  scss/at-rule-no-unknown: true
+  max-nesting-depth: null
+  selector-max-compound-selectors: null
+  no-descending-specificity: null
+  color-named: always-where-possible
+  selector-no-qualifying-type: null
+  selector-class-pattern: null
