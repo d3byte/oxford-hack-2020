@@ -10,6 +10,10 @@ input {
   width: 95%;
 }
 
+input::placeholder {
+  font-weight: bold;
+}
+
 .input__container {
   align-content: center;
   display: flex;
