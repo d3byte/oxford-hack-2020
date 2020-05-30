@@ -53,9 +53,9 @@
     unicode-range: U+0020-00F7;
 }
 
-body {
+* {
     font-family: 'HelveticaNeueCyr';
-    background: '#222222';
-    color: '#fff';
+    background-color: #222222;
+    color: #fff;
     font-weight: 700;
 }
