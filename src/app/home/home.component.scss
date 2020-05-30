@@ -1,13 +1,14 @@
 .home__container {
-  padding: 40px 80px;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
-  box-sizing: border-box;
+  padding: 40px 80px;
 }
 
 .home__promo {
+  justify-self: flex-start;
   .home__promo--heading {
     font-size: 48px;
   }
@@ -25,12 +26,12 @@
 
 .button {
   &.button--primary {
-    background-color: #ffffff;
+    background-color: white;
+    border: 1px solid white;
     border-radius: 25px;
-    border: 1px solid #ffffff;
-    display: inline-block;
+    color: black;
     cursor: pointer;
-    color: #000000;
+    display: inline-block;
     font-size: 17px;
     padding: 16px 31px;
     text-decoration: none;
@@ -38,15 +39,15 @@
 }
 
 footer {
-  background-color: #000;
-  width: 100%;
-  padding: 40px 80px;
+  background-color: black;
+  box-sizing: border-box;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  box-sizing: border-box;
+  padding: 40px 80px;
+  width: 100%;
 
   .home__footer {
-    background-color: #000;
+    background-color: black;
   }
 }
