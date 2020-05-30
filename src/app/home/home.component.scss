@@ -1,9 +1,13 @@
+:host {
+  display: block;
+  min-height: 100vh;
+}
+
 .home__container {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 100vh;
   padding: 20px 80px;
 }
 
@@ -26,6 +30,24 @@ footer {
 .home__subtitle {
   color: rgba(255, 255, 255, 0.6);
   margin: 43px 0;
+}
+
+.topic-feed {
+  overflow-x: scroll;
+  overflow-y: visible;
+
+  .scroll {
+    overflow: scroll;
+
+    > * {
+      &:first-child {
+        margin-left: 80px;
+      }
+      &:last-child {
+        padding-right: 80px;
+      }
+    }
+  }
 }
 
 topic-card {
