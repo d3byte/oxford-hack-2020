@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 
-import { TopicInterface } from '@share/interface/topic.interface';
+import { TopicInterface } from '@share/interfaces/topic.interface';
 
 @Component({
   selector: 'topic-card',
