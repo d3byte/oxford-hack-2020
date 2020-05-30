@@ -1,0 +1,30 @@
+.home__container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  padding: 40px 80px;
+}
+
+footer {
+  background-color: black;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 40px 80px;
+  width: 100%;
+
+  .home__footer {
+    background-color: black;
+  }
+}
+
+.home__subtitle {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+topic-card {
+  margin-right: 20px;
+}

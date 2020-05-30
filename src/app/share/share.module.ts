@@ -4,8 +4,11 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { CoreModule } from '@core/core.module';
 
+import { ComponentsModule } from '@share/components/components.module';
+
 @NgModule({
   declarations: [],
-  imports: [CommonModule, ReactiveFormsModule, CoreModule],
+  imports: [],
+  exports: [CommonModule, CoreModule, ReactiveFormsModule, ComponentsModule],
 })
 export class ShareModule {}

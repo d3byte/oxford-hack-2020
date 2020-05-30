@@ -1,0 +1,16 @@
+<div class="topic-card clickable"
+     [class.long]="topic.description"
+     [style.backgroundColor]="backgroundColor">
+
+  <main class="topic-card__info">
+
+    <h3 class="topic-card__title subtitle">{{ topic.title }}</h3>
+
+    <p *ngIf="topic.description"
+       class="topic-card__text body2">{{ topic.description }}</p>
+
+  </main>
+
+  <button btn-component>View</button>
+
+</div>
