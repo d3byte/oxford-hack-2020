@@ -6,5 +6,6 @@ import { TopicCardComponent } from './topic-card.component';
 @NgModule({
   declarations: [TopicCardComponent],
   imports: [CommonModule],
+  exports: [TopicCardComponent],
 })
 export class TopicCardModule {}
