@@ -33,11 +33,15 @@ footer {
 }
 
 .topic-feed {
-  overflow-x: scroll;
-  overflow-y: visible;
+  overflow-x: hidden;
+  overflow-y: hidden;
 
   .scroll {
-    overflow: scroll;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    // background-color: red;
+    scrollbar-color: #f46286 #222;
+    scrollbar-width: thin;
 
     > * {
       &:first-child {
