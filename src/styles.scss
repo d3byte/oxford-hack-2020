@@ -53,8 +53,11 @@
   unicode-range: U+0020-00F7;
 }
 
-* {
+html {
   background-color: #222;
+}
+
+* {
   color: white;
   font-family: 'HelveticaNeueCyr', Roboto, sans-serif;
   font-weight: 500;
@@ -100,4 +103,16 @@
 
 .align-left {
   margin-right: auto;
+}
+
+.row {
+  display: flex;
+
+  &.align-center {
+    align-items: center;
+  }
+
+  &.space-between {
+    justify-content: space-between;
+  }
 }

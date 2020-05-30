@@ -6,6 +6,14 @@
         <h2 class='headline2 home__subtitle'>Choose an article and start learning<br>right away.</h2>
       </div>
   </header>
+  <div class='home__promo'>
+    <h1 class='home__promo--heading'>Spend your time wisely.<br>Learn something.</h1>
+    <h2 class='home__promo--subheding'>Choose an article and start learning<br>right away.</h2>
+  </div>
+  <div class="row">
+    <topic-card *ngFor="let topic of topics"
+                [topic]="topic"></topic-card>
+  </div>
   <div class='home__topic'>
     <h2 class='subtitle home__subtitle'>Or browse our variety of topics and<br>find what you like.</h2>
     <button btn-component>View topics</button>
