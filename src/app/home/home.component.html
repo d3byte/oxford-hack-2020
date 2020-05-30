@@ -6,11 +6,15 @@
         <h2 class='headline2 home__subtitle'>Choose an article and start learning<br>right away.</h2>
       </div>
   </header>
-  <div class="row">
+</div>
+<div class="topic-feed">
+  <div class="scroll row">
     <topic-card *ngFor="let topic of topics"
                 [topic]="topic"></topic-card>
   </div>
-  <div class='home__topic'>
+</div>
+<div class="home__container">
+  <div class='home__topic' style="margin-bottom: 20px">
     <h2 class='subtitle home__subtitle'>Or browse our variety of topics and<br>find what you like.</h2>
     <button btn-component>Browse topics</button>
   </div>
@@ -19,3 +23,4 @@
 <footer>
     <div class='home__footer'>kek</div>
 </footer>
+
