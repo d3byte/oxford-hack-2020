@@ -1,0 +1,29 @@
+.header {
+  align-content: center;
+  display: flex;
+  flex-direction: row;
+  padding-left: 40px;
+  padding-top: 80px;
+
+  .category {
+    display: flex;
+    flex-direction: column;
+
+    .chosen {
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 18px;
+      font-style: normal;
+      font-weight: bold;
+      line-height: 18px;
+      padding-bottom: 10px;
+    }
+
+    .category-name {
+      color: white;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: bold;
+      line-height: 30px;
+    }
+  }
+}
