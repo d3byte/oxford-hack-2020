@@ -1,5 +1,12 @@
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+import { HomeComponent } from './home.component';
+
+const routes: Routes = [
+  {
+    path: '',
+    component: HomeComponent,
+  },
+];
 
 export const RoutingModule = RouterModule.forRoot(routes);
