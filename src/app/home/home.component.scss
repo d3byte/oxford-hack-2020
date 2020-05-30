@@ -1,0 +1,27 @@
+.home__container {
+  padding: 40px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: space-between;
+
+  .home__heading {
+    font-size: 48px;
+  }
+
+  .home__subheding {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.button--primary {
+  background-color: #ffffff;
+  border-radius: 25px;
+  border: 1px solid #ffffff;
+  display: inline-block;
+  cursor: pointer;
+  color: #000000;
+  font-size: 17px;
+  padding: 16px 31px;
+  text-decoration: none;
+}
