@@ -1,29 +1,119 @@
-.header {
-  align-content: center;
+.test {
   display: flex;
   flex-direction: row;
-  padding-left: 40px;
-  padding-top: 80px;
+  padding: 40px 80px;
+}
 
-  .category {
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+
+  .logo {
+    hr {
+      border: 1px solid rgba(204, 204, 204, 0.08);
+      margin-bottom: 30px;
+      margin-top: 30px;
+    }
+  }
+  .sidebar-caption {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 30px;
+    padding-bottom: 50px;
+  }
+
+  .sidebar-categories {
     display: flex;
     flex-direction: column;
 
-    .chosen {
-      color: rgba(255, 255, 255, 0.5);
+    span {
+      color: rgba(255, 255, 255, 0.35);
+      font-size: 24px;
+      font-style: normal;
+      font-weight: bold;
+      line-height: 24px;
+      padding-bottom: 25px;
+    }
+
+    .sidebar-chosen {
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+      line-height: 24px;
+    }
+  }
+}
+
+.main-block {
+  display: flex;
+  flex-direction: column;
+  padding-left: 140px;
+  width: 100%;
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 60px;
+    width: 100%;
+
+    .category {
+      display: flex;
+      flex-direction: column;
+
+      .caption {
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 18px;
+        padding-bottom: 10px;
+      }
+
+      .category-name {
+        color: white;
+        display: flex;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: bold;
+        justify-content: center;
+        line-height: 30px;
+
+        svg-icon {
+          padding-left: 15px;
+          padding-top: 4px;
+        }
+      }
+    }
+
+    .search {
+      display: flex;
+      margin-left: auto;
+    }
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    .navbar-chosen {
+      color: white;
       font-size: 18px;
       font-style: normal;
       font-weight: bold;
       line-height: 18px;
-      padding-bottom: 10px;
+      text-decoration-line: underline;
     }
 
-    .category-name {
-      color: white;
-      font-size: 30px;
+    span {
+      color: rgba(255, 255, 255, 0.45);
+      font-size: 18px;
       font-style: normal;
       font-weight: bold;
-      line-height: 30px;
+      line-height: 18px;
+      padding-right: 30px;
     }
   }
 }
