@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
-  padding: 40px 80px;
+  padding: 20px 80px;
 }
 
 footer {
@@ -18,11 +18,14 @@ footer {
 
   .home__footer {
     background-color: black;
+    max-width: 840px;
+    width: 95%;
   }
 }
 
 .home__subtitle {
   color: rgba(255, 255, 255, 0.6);
+  margin: 43px 0;
 }
 
 topic-card {

@@ -1,0 +1,26 @@
+input {
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid gray;
+  color: white;
+  font-family: inherit;
+  font-size: 1.3rem;
+  outline: 0;
+  transition: border-color 0.2s;
+  width: 95%;
+}
+
+input::placeholder {
+  font-weight: bold;
+}
+
+.input__container {
+  align-content: center;
+  display: flex;
+  flex-direction: row;
+}
+
+svg-icon {
+  line-height: 0 !important;
+  padding-right: 15px;
+}
