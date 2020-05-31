@@ -3,21 +3,16 @@ import { Component, Input, OnInit } from '@angular/core';
 import { TopicInterface } from '@share/interfaces/topic.interface';
 
 @Component({
-  selector: 'app-topics',
-  templateUrl: './topics.component.html',
-  styleUrls: ['./topics.component.scss'],
+  selector: 'app-current-topic',
+  templateUrl: './current-topic.component.html',
+  styleUrls: ['./current-topic.component.scss'],
 })
-export class TopicsComponent implements OnInit {
+export class CurrentTopicComponent implements OnInit {
   constructor() {}
   public toggleSearch = false;
-  public description = false;
+  public description = true;
 
   public topics: TopicInterface[] = [
-    {
-      title: 'JavaScript',
-      description:
-        'JavaScript is among the most powerful and flexible programming languages of the web. It powers the dynamic behavior on most websites, including this one.',
-    },
     {
       title: 'Mobile Web',
     },
