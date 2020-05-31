@@ -1,13 +1,51 @@
-<div class="header">
-  <div class="logo">
-    <img src="https://placeimg.com/200/90/any">
-  </div>
-  <div class="category">
-    <div class="chosen">
-      Chosen category:
+<section>
+  <aside>
+    <div class="logo">
+      <img src='/assets/ichain.png'>
+      <hr>
     </div>
-    <div class="category-name">
-      Web development
+    <div class="sidebar-caption">
+      What would you like to learn today?
     </div>
-  </div>
-</div>
+    <div class="sidebar-categories">
+      <span>Design</span>
+      <span class="sidebar-chosen">Web development</span>
+      <span>Productivity</span>
+      <span>Health</span>
+      <span>Math</span>
+      <span>Philosophy</span>
+    </div>
+  </aside>
+
+  <main>
+    <header>
+      <div class="category" *ngIf="!toggleSearch">
+        <div class="caption">
+          Chosen category:
+        </div>
+        <div class="category-name">
+          Web development
+          <svg-icon src="/assets/icons/close-icon.svg"></svg-icon>
+        </div>
+      </div>
+      <div class="input" *ngIf="toggleSearch">
+        <search-input></search-input>
+      </div>
+      <div class="searchButton" (click)="toggle()">
+        <icon-button *ngIf="!toggleSearch" iconUrl="/assets/icons/search-icon.svg"></icon-button>
+        <icon-button *ngIf="toggleSearch" backgroundColor="#333333" iconColor="#000000" iconUrl="/assets/icons/close-icon.svg"></icon-button>
+      </div>
+    </header>
+    <nav>
+      <span class="navbar-chosen">All</span>
+      <span>Addons</span>
+      <span>Extensions</span>
+      <span>Replacements</span>
+      <span>Simplification</span>
+    </nav>
+
+    <section class="topic-grid">
+      <topic-grid [topics]='topics'></topic-grid>
+    </section>
+  </main>
+</section>

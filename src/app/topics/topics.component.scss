@@ -1,29 +1,142 @@
-.header {
-  align-content: center;
+section {
   display: flex;
   flex-direction: row;
-  padding-left: 40px;
-  padding-top: 80px;
+  padding: 40px 80px;
 
-  .category {
+  aside {
     display: flex;
     flex-direction: column;
+    max-width: 300px;
 
-    .chosen {
-      color: rgba(255, 255, 255, 0.5);
-      font-size: 18px;
-      font-style: normal;
-      font-weight: bold;
-      line-height: 18px;
-      padding-bottom: 10px;
+    .logo {
+      img {
+        height: 70px;
+      }
+      hr {
+        border: 1px solid rgba(204, 204, 204, 0.08);
+        margin-bottom: 30px;
+        margin-top: 30px;
+      }
     }
-
-    .category-name {
-      color: white;
+    .sidebar-caption {
       font-size: 30px;
       font-style: normal;
       font-weight: bold;
       line-height: 30px;
+      padding-bottom: 50px;
+    }
+
+    .sidebar-categories {
+      display: flex;
+      flex-direction: column;
+
+      span {
+        color: rgba(255, 255, 255, 0.35);
+        cursor: pointer;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 24px;
+        padding-bottom: 25px;
+      }
+
+      .sidebar-chosen {
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 24px;
+      }
+    }
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    padding-left: 140px;
+    width: 100%;
+
+    header {
+      display: flex;
+      flex-direction: row;
+      padding-bottom: 60px;
+      width: 100%;
+
+      .input {
+        align-self: center;
+        display: flex;
+        width: 100%;
+
+        search-input {
+          width: 100%;
+        }
+      }
+
+      .category {
+        display: flex;
+        flex-direction: column;
+
+        .caption {
+          color: rgba(255, 255, 255, 0.5);
+          font-size: 18px;
+          font-style: normal;
+          font-weight: bold;
+          line-height: 18px;
+          padding-bottom: 10px;
+        }
+
+        .category-name {
+          color: white;
+          display: flex;
+          font-size: 30px;
+          font-style: normal;
+          font-weight: bold;
+          justify-content: center;
+          line-height: 30px;
+
+          svg-icon {
+            padding-left: 15px;
+            padding-top: 4px;
+          }
+        }
+      }
+
+      .searchButton {
+        display: flex;
+        margin-left: auto;
+
+        .close-button {
+          fill: 333333;
+        }
+      }
+    }
+
+    nav {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+
+      .navbar-chosen {
+        color: white;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 18px;
+        text-decoration-line: underline;
+      }
+
+      span {
+        color: rgba(255, 255, 255, 0.45);
+        cursor: pointer;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 18px;
+        padding-right: 30px;
+      }
+    }
+
+    .topic-grid {
+      padding-left: 0;
     }
   }
 }
