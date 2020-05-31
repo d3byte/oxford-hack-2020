@@ -1,4 +1,4 @@
 **/node_modules/**
-**/swagger/**
+**/api/**
 
 .eslintrc.js

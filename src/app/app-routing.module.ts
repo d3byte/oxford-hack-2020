@@ -9,7 +9,12 @@ const routes: Routes = [
   },
   {
     path: 'topics',
+    pathMatch: 'full',
     loadChildren: () => import('./topics/topics.module').then(m => m.TopicsModule),
+  },
+  {
+    path: 'topics/1',
+    loadChildren: () => import('./current-topic/current-topic.module').then(m => m.CurrentTopicModule),
   },
 ];
 
