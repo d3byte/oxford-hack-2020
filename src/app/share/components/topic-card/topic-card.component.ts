@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 import { topicCardColors } from '@share/components/topic-card/topic-card-colors.const';
 import { TopicCardColor } from '@share/components/topic-card/topic-card-colors.type';
@@ -13,6 +14,8 @@ export class TopicCardComponent implements OnInit {
   @Input() public topic: TopicInterface;
   @Input() public backgroundColor?: TopicCardColor;
 
+  constructor(private router: Router) {}
+
   ngOnInit() {
     this.setDefaultBackgroundColor();
   }
@@ -26,5 +29,9 @@ export class TopicCardComponent implements OnInit {
   private getRandomColor(): TopicCardColor {
     const cardIndex: number = Math.floor(Math.random() * 6);
     return topicCardColors[cardIndex];
+  }
+
+  public navigate(): void {
+    this.router.navigateByUrl('/topics/1');
   }
 }
