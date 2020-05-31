@@ -61,6 +61,16 @@ section {
       padding-bottom: 60px;
       width: 100%;
 
+      .input {
+        align-self: center;
+        display: flex;
+        width: 100%;
+
+        search-input {
+          width: 100%;
+        }
+      }
+
       .category {
         display: flex;
         flex-direction: column;
@@ -90,9 +100,13 @@ section {
         }
       }
 
-      .search {
+      .searchButton {
         display: flex;
         margin-left: auto;
+
+        .close-button {
+          fill: 333333;
+        }
       }
     }
 

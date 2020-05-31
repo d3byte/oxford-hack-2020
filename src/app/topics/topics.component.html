@@ -19,17 +19,21 @@
 
   <main>
     <header>
-      <div class="category">
+      <div class="category" *ngIf="!toggleSearch">
         <div class="caption">
           Chosen category:
         </div>
         <div class="category-name">
           Web development
-          <svg-icon src="/assets/icons/close.svg"></svg-icon>
+          <svg-icon src="/assets/icons/close-icon.svg"></svg-icon>
         </div>
       </div>
-      <div class="search">
-        <icon-button iconUrl="/assets/icons/search-icon.svg"></icon-button>
+      <div class="input" *ngIf="toggleSearch">
+        <search-input></search-input>
+      </div>
+      <div class="searchButton" (click)="toggle()">
+        <icon-button *ngIf="!toggleSearch" iconUrl="/assets/icons/search-icon.svg"></icon-button>
+        <icon-button *ngIf="toggleSearch" [backgroundColor]="333333" iconUrl="/assets/icons/close-icon.svg"></icon-button>
       </div>
     </header>
     <nav>
