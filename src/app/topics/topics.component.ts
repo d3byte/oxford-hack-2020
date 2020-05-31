@@ -6,13 +6,13 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./topics.component.scss'],
 })
 export class TopicsComponent implements OnInit {
-  @Input() public toggleSearch = false;
+  public toggleSearch = false;
 
   constructor() {}
 
   ngOnInit(): void {}
 
-  public toggle() {
+  public toggle(): void {
     this.toggleSearch = !this.toggleSearch;
   }
 }
