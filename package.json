@@ -10,7 +10,8 @@
     "e2e": "ng e2e",
     "lint:fix": "eslint --fix \"src/**/*.ts\"",
     "style:fix": "stylelint \"src/**/*.scss\" --syntax scss --fix",
-    "format:fix": "prettier --write \"src/**/*.{ts,js,json,scss}\""
+    "format:fix": "prettier --write \"src/**/*.{ts,js,json,scss}\"",
+    "swagger-generate": "./swagger-generate.sh"
   },
   "private": true,
   "husky": {
