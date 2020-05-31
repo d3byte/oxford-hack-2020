@@ -85,6 +85,7 @@ section {
         }
 
         .category-name {
+          align-content: center;
           color: white;
           display: flex;
           font-size: 30px;
@@ -94,8 +95,7 @@ section {
           line-height: 30px;
 
           svg-icon {
-            padding-left: 15px;
-            padding-top: 4px;
+            padding-left: 10px;
           }
         }
       }
